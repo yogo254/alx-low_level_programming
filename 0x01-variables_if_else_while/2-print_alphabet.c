@@ -10,13 +10,13 @@
  */
 int main(void)
 {
-	int letter;
+    int letter;
 
-	letter = 'a';
-	for (; letter < (97 + 26); letter++)
-	{
-		putchar(letter);
-	}
-	putchar('\n');
-	return (0);
+    letter = 'a';
+    for (; letter < (97 + 26); letter++)
+    {
+        putchar(letter);
+    }
+    putchar('\n');
+    return (0);
 }
