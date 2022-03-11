@@ -3,7 +3,13 @@
 #include <time.h>
 /* more headers goes there */
 
-/* main entry point for the application */
+/**
+ * main - main function
+ * @void: no params
+ *
+ * Description: main function.
+ * Return: exist status
+ */
 int main(void)
 {
 	int n;
