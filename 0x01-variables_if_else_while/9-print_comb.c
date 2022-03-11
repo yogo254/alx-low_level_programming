@@ -17,7 +17,11 @@ int main(void)
 	{
 		putchar((letter % 10) + '0');
 		if (letter < 9)
+		{
 			putchar(',');
+			putchar(' ');
+		}
+
 	}
 	putchar('\n');
 	return (0);
