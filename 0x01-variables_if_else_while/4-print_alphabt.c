@@ -15,7 +15,7 @@ int main(void)
 	letter = 'a';
 	for (; letter < (97 + 26); letter++)
 	{
-		if (letter != 101 || letter != 113)
+		if (letter != 101 && letter != 113)
 			putchar(letter);
 	}
 	putchar('\n');
