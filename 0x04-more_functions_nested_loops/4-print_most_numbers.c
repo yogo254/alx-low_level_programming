@@ -9,9 +9,9 @@ void print_numbers(void)
 
 	while (num < 10)
 	{
-		_putchar(num);
+		if (num != 2 && num != 3)
+			_putchar(num);
 		num++;
 	}
-
 	_putchar('\n');
 }
