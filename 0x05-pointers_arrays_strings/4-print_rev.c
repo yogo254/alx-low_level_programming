@@ -1,14 +1,14 @@
 #include <stdio.h>
+#include <string.h>
 /**
- * _puts - print pointer value
- * @str: String pointer
+ * print_rev - print pointer value
+ * @s: String pointer
  *
  * Description: get string lenght of a pointer.
  * Return: string length
  */
-void _puts(char *str)
+void print_rev(char *s)
 {
-
-	puts(str);
+	puts(strrev(s));
 	printf("\n");
 }
