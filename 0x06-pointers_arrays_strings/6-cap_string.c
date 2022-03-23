@@ -1,8 +1,13 @@
-#include <stdio.h>
-#include <string.h>
-int main(int argc, char const *argv[])
+/**
+ * cap_string- to uppercase funtion
+ * @s: source string
+ *
+ *
+ * Description: join two strings together.
+ * Return: uppacase String
+ */
+char *cap_string(char *source)
 {
-	char *source = "hell";
 	int i;
 
 	int len = strlen(source);
@@ -21,6 +26,6 @@ int main(int argc, char const *argv[])
 			s[i] = s[i] - 32;
 		}
 	}
-	printf("%s", s);
-	return 0;
+
+	return (s);
 }
