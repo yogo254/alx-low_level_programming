@@ -1,15 +1,14 @@
-#include <stdio.h>
-#include <string.h>
-
+/**
+ * is_prime_number-checks if a number is prime
+ * @n: number
+ * Description: checks if a number is prime
+ * Return: is prime
+ */
 int is_prime_number(int n)
 {
 	if (n == 1)
 	{
 		return (0);
-	}
-	else if (n == 2)
-	{
-		return (1);
 	}
 	else
 	{
@@ -22,11 +21,4 @@ int is_prime_number(int n)
 		}
 		return (1);
 	}
-}
-
-int main(void)
-{
-	int p = is_prime_number(7);
-	printf("%d", p);
-	return (0);
 }
