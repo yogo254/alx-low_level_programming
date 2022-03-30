@@ -1,8 +1,12 @@
-#include <stdio.h>
-#include <string.h>
+/**
+ * _pow_recursion- get x power y
+ * @x: int x
+ * @y: int y
+ * Description:  get x power y
+ * Return: power of x
+ */
 int _pow_recursion(int x, int y)
 {
-
 	if (y < 0)
 	{
 		return (-1);
@@ -13,11 +17,4 @@ int _pow_recursion(int x, int y)
 	}
 	else
 		return (x * _pow_recursion(x, y - 1));
-}
-
-int main(void)
-{
-	int p = _pow_recursion(10, 2);
-	printf("%d", p);
-	return (0);
 }
