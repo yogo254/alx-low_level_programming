@@ -1,26 +1,17 @@
 #include <stdio.h>
-#include <string.h>
-int main(int argc, char const *argv[])
+int print(int nb)
 {
-	char *source = "hell";
-	int i;
-
-	int len = strlen(source);
-
-	char s[len];
-
-	for (int x = 0; x < len; x++)
+	if (nb < 0)
 	{
-		s[x] = source[x];
+		return (0);
 	}
+	printf("%d", nb + print(nb - 1));
+	nb--;
+	return (nb);
+}
 
-	for (i = 0; s[i] != '\0'; i++)
-	{
-		if (s[i] >= 'a' && s[i] <= 'z')
-		{
-			s[i] = s[i] - 32;
-		}
-	}
-	printf("%s", s);
-	return 0;
+int main(void)
+{
+	print(4);
+	return (0);
 }
