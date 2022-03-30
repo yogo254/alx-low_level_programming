@@ -1,6 +1,9 @@
-#include <stdio.h>
-#include <string.h>
-
+/**
+ * _sqrt_recursion- get square root of n
+ * @n: number
+ * Description:  get square root of n
+ * Return: square root of n
+ */
 int _sqrt_recursion(int n)
 {
 	if (n < 1)
@@ -21,11 +24,4 @@ int _sqrt_recursion(int n)
 			}
 		}
 	}
-}
-
-int main(void)
-{
-	int p = _sqrt_recursion(13);
-	printf("%d", p);
-	return (0);
 }
