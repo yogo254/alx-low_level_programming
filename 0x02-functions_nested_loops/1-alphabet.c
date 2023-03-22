@@ -1,12 +1,19 @@
-#include "main.h"
+#include "holberton.h"
 
 /**
- * main - check the code
+ * print_alphabet - print alphabet
  *
- * Return: Always 0.
+ * Return: void
  */
-int main(void)
+
+void print_alphabet(void)
 {
-    print_alphabet();
-    return (0);
+	char letter = 'a';
+
+	while (letter <= 'z')
+	{
+		_putchar(letter);
+		letter++;
+	}
+	_putchar('\n');
 }
