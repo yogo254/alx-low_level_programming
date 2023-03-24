@@ -1,14 +1,14 @@
+#include "holberton.h"
+
 /**
- * _mul - find product of two numbers.
- * @a: first number
- * @b: second number
- * Return: product of a and b.
+ * mul - multiplies two integers
+ * @a: first integer
+ * @b: second integer
+ *
+ * Return: result (product of two integers)
  */
+
 int mul(int a, int b)
 {
-	int product;
-
-	product = a * b;
-
-	return (product);
+	return (a * b);
 }
