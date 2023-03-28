@@ -1,21 +1,21 @@
 #include <stdio.h>
 #include <string.h>
 /**
- * _strcpy - print pointer value
- * @dest: destination array
- * @src: source array
- *
- * Description: get string lenght of a pointer.
- * Return: dest array
+ * _strcpy - copies the string pointed to by src into dest
+ * @dest: destination
+ * @src: source
+ * Return: char with copy of string
  */
+
 char *_strcpy(char *dest, char *src)
 {
-	int len = strlen(src);
+	int i;
 
-	for (int x = 0; x < len; ++x)
+	for (i = 0; *(src + i) != '\0'; i++)
 	{
-		dest[x] = src[x];
+		dest[i] = *(src + i);
 	}
+	dest[i] = '\0';
 
-	return (*dest);
+	return (dest);
 }

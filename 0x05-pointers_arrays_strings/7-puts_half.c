@@ -1,25 +1,24 @@
-#include <stdio.h>
-#include <string.h>
 /**
- * puts_half - print pointer value
- * @str: String pointer
- *
- * Description: get string lenght of a pointer.
- * Return: string length
+ * puts_half - prints half of a string
+ * @str: string
+ * Return: void
  */
+
 void puts_half(char *str)
 {
-	int len = strlen(str);
+	int i, j, max;
 
-	int n = 0;
-	
-	if (len % 2 == 0)
-		n = len / 2;
-	else
-		n = (len - 1) / 2;
-	for (int x = n; x < len; ++x)
+	i = 0;
+	while (str[i] != '\0')
 	{
-		printf("%c", str[x]);
-	}	
-	printf("\n");
+		i++;
+	}
+	max = i;
+	j = max / 2;
+	while (j <= max)
+	{
+		_putchar(str[j]);
+		j++;
+	}
+	_putchar('\n');
 }

@@ -1,19 +1,20 @@
-#include <stdio.h>
-#include <string.h>
 /**
- * puts2 - print pointer value
- * @str: String pointer
- *
- * Description: get string lenght of a pointer.
- * Return: string length
+ * puts2 - print alternating chars of string
+ * @str: string
+ * Return: void
  */
+
 void puts2(char *str)
 {
-	int len = strlen(str);
+	int i;
 
-	for (int x = 0; x < len; x = x + 2)
+	i = 0;
+	while (str[i] != '\0')
 	{
-		printf("%c", str[x]);
+		if (i % 2 == 0)
+			_putchar(str[i]);
+		i++;
 	}
-	printf("\n");
+	_putchar('\n');
 }
+

@@ -1,20 +1,28 @@
 #include <stdio.h>
-#include <string.h>
+
 /**
- * print_array - print pointer value
- * @a: integer array
- * @n: number of elements to print
- *
- * Description: get string lenght of a pointer.
- * Return: string length
+ * print_array - prints n elements of an array
+ * @a: array of integers
+ * @n: number of items to print
+ * Return: void
  */
+
 void print_array(int *a, int n)
 {
-	int len = strlen(a);
+	int i, count;
 
-	for (int x = 0; x < len; ++x)
+	i = 0;
+	count = 1;
+	if (n < 0)
+		n = 0;
+	if (n > 0)
 	{
-		printf("%d", a[x]);
+		while (a[i] != '\0' && count < n)
+		{
+			printf("%d, ", a[i]);
+			i++;
+			count++;
+		}
+		printf("%d\n", a[i]);
 	}
-	printf("\n");
 }
