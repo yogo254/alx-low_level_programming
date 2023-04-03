@@ -1,36 +1,27 @@
-#include <string.h>
-#include <stdbool.h>
-/**
- * *_strpbrk - searches for accept in s
- * @s: source string
- * @accept: bytes to find is s
+#include "main.h"
+#define NULL 0
 
- * Description: searches for accept in s
- * Return: pointe to any match
+/**
+ * _strpbrk - searches a string for any of a set of bytes
+ * @s: string
+ * @accept: chars to compare
+ * Return: pointer from the initial segment of match
  */
+
 char *_strpbrk(char *s, char *accept)
 {
-	int len = strlen(s);
+	int i, j;
 
-	int len2 = strlen(accept);
-
-	char *temp = NULL;
-
-	bool flag = 0;
-
-	for (int i = 0; i < len; i++)
+	for (i = 0; *(s + i) != '\0'; i++)
 	{
-		for (int x = 0; x < len2; x++)
+		for (j = 0; *(accept + j) != '\0'; j++)
 		{
-			if (s[i] == accept[x])
+			if (*(s + i) == *(accept + j))
 			{
-				temp = s[i];
-				flag = true;
-				break;
+				return (s + i);
 			}
 		}
-		if (flag)
-			break;
 	}
-	return (*temp);
+
+	return (NULL);
 }

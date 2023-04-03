@@ -1,16 +1,21 @@
+#include "main.h"
+
 /**
- * _memset - files memory location with bytes
- * @s: bytes to fill
- * @b: fill parameter
- * @n: number of bytes to fill
- * Description: files memory location with bytes.
- * Return: poniter to the filled bytes
+ * _memset - fills memory with a constant byte
+ * @s: string array
+ * @b: constant byte
+ * @n: number of bytes
+ * Return: pointer
  */
+
 char *_memset(char *s, char b, unsigned int n)
 {
-	for (int i = 0; i < n; i++)
+	unsigned int i;
+
+	for (i = 0; i < n; i++)
 	{
-		s[1] = b;
+		s[i] = b;
 	}
-	return (*s);
+
+	return (s);
 }
